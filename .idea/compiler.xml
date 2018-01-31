@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="FizzBuzzRest_main" target="1.8" />
+      <module name="FizzBuzzRest_test" target="1.8" />
       <module name="initial_main" target="1.8" />
       <module name="initial_test" target="1.8" />
     </bytecodeTargetLevel>
