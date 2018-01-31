@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Kenzan FizzBuzz</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFCFF;
+	color: #31384D;
+	font-size: 15px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/**HEADERS & CONTENT**/
+h1 {
+	font-weight: bold;
+	font-size: 50px;
+	vertical-align: middle;
+	text-indent: .5em;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 25px;
+	vertical-align: middle;
+	text-indent: 1em;
+	background-color: #F0F1F3;
+}
+
+
+h3 {
+	font-size: 25px;
+	font-weight: bold;
+	border-style: none none double none;
+}
+
+/**SECTIONS**/
+header {
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+
+section {
+	background-color: #F3E7E6;
+	border: .5px black solid;
+	width: 500px;
+	min-height: 25%;
+	margin: auto;
+}
+</style>
+<body>
+<header>
+    <h1>Maria Deslis - FizzBuzz</h1>
+    <h2>Kenzan- Rest Service Java8</h2>
+</header>
+<section>
+    <h3 th:text="Upper Bound :  ${upperBound}"/>
+</section>
+</body>
+</html>
