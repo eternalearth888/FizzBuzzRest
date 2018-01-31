@@ -10,6 +10,14 @@ public class FizzBuzzController {
     public FizzBuzz fizzBuzz(
             // @RequestParm binds the value of the query string parameter upperBound into the upperBound parameter in FizzBuzz
             @RequestParam(value="upperBound", defaultValue="No parameter value given") String upperBound) {
-                    return new FizzBuzz(upperBound);
+        try {
+            Integer.valueOf(upperBound);
+            return new FizzBuzz(upperBound);
+        }
+         catch (NumberFormatException e)
+         {
+             return new FizzBuzz("Invalid");
+         }
+
     }
 }

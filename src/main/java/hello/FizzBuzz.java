@@ -11,17 +11,7 @@ public class FizzBuzz {
 
     public FizzBuzz(String upperBound) {
         this.upperBound = upperBound;
-    }
-
-    public String getUpperBound(){
-        try{
-            Integer.valueOf(upperBound);
-            calculateFizzBuzz();
-        }
-        catch (NumberFormatException e){
-            return upperBound + " : NOT VALID INTEGER";
-        }
-        return upperBound;
+        calculateFizzBuzz();
     }
 
     public List<Integer> getBuzz() {
