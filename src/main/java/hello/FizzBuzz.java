@@ -14,12 +14,12 @@ public class FizzBuzz {
         calculateFizzBuzz();
     }
 
-    public List<Integer> getBuzz() {
-        return Buzz;
-    }
-
     public List<Integer> getFizzBuzz() {
         return FizzBuzz;
+    }
+
+    public List<Integer> getBuzz() {
+        return Buzz;
     }
 
     public List<Integer> getFizz() {
