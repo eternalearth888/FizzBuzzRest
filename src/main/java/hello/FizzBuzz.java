@@ -31,7 +31,7 @@ public class FizzBuzz {
         IntStream.rangeClosed(1, Integer.parseInt(upperBound))
                 .mapToObj(i -> i % 3 == 0 ?
                             (i % 5 == 0 ? FizzBuzz.add(i) : Fizz.add(i)) :
-                            (i%5==0 ? Buzz.add(i) : i))
+                            (i % 5 == 0 ? Buzz.add(i) : i))
                 .forEach(i -> System.out.print(i));
     }
 }

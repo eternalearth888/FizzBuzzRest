@@ -6,16 +6,18 @@ import javax.websocket.server.PathParam;
 
 @RestController
 public class FizzBuzzController {
-    @RequestMapping("/fizzbuzz")
+    @RequestMapping("/fizzbuzz/{upperBound}")
     public FizzBuzz fizzBuzz(
             // @RequestParm binds the value of the query string parameter upperBound into the upperBound parameter in FizzBuzz
-            @RequestParam(value="upperBound", defaultValue="No parameter value given") String upperBound) {
+            @PathVariable String upperBound) {
         try {
             Integer.valueOf(upperBound);
             return new FizzBuzz(upperBound);
+            //return good request 200?
         }
          catch (NumberFormatException e)
          {
+             // should i return new bad request 400?
              return new FizzBuzz("Invalid");
          }
 
